@@ -9,12 +9,19 @@
     flex-shrink: 0;
     width: 54px;
     @include objectFitContain();
+    @include breakpoint(mobile) {
+        width: 34px;
+        height: 46px;
+    }
 }
 
 
 .logo-small-text {
     font-size: 12px;
     color: $light-blue-text;
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
 }
 
 
@@ -26,6 +33,9 @@
     margin-top: 5px;
     @include breakpoint(laptop) {
         font-size: 22px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 18px;
     }
 }
 
@@ -43,6 +53,9 @@
     @include breakpoint(tablet) {
         margin-top: 0;
         margin-left: auto;
+    }
+    @include breakpoint(small-mobile) {
+        display: none;
     }
 }
 
@@ -174,13 +187,21 @@
 .navigation-list {
     display: flex;
     align-items: center;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 
 .navigation-list-item {
     margin-right: 40px;
+    @include breakpoint(mobile) {
+        margin-bottom: 5px;
+    }
     &:last-child {
         margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -208,6 +229,9 @@
         display: block;
         
         background-color: #D4D4D5;
+        @include breakpoint(mobile) {
+            margin-top: 0px;
+        }
         
     }
     &:link,
@@ -227,6 +251,12 @@
     @include breakpoint(tablet) {
         margin-top: 70px;
     }
+
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-top: 35px;
+    }
 }
 
 
@@ -245,6 +275,9 @@
         margin-bottom: 40px;
         line-height: 1.4;
     }
+    @include breakpoint(mobile) {
+        font-size: 22px;
+    }
 }
 
 
@@ -253,6 +286,9 @@
     margin-top: 70px;
     @include breakpoint(laptop) {
         margin-top: 40px;
+    }
+    @include breakpoint(mobile) {
+        margin-top: 30px;
     }
 }
 
@@ -267,6 +303,9 @@
     display: block;
     @include breakpoint(laptop) {
         font-size: 42px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 32px;
     }
     &::after {
         content: '';
@@ -291,6 +330,9 @@
         line-height: 1.5;
         color: #45454F;
         margin-bottom: 15px;
+        @include breakpoint(mobile) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -304,12 +346,20 @@
     @include breakpoint(laptop) {
         max-width: none;
     }
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
 }
 
 
 .videos-list-item {
     padding: 15px;
     width: 50%;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .videos-card {

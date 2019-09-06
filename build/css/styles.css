@@ -161,6 +161,9 @@ img {
       background-image: none;
       flex-direction: row;
       align-items: center; } }
+  @media only screen and (max-width: 768px) {
+    .page-sidebar {
+      padding: 12px 20px; } }
 
 .page-main {
   width: 20%;
@@ -191,7 +194,7 @@ img {
   z-index: 1;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .6s ease, visibility 0s linear .6s;
+  transition: opacity 0.6s ease, visibility 0s linear 0.6s;
   top: 0;
   left: 0;
   width: 100%;
@@ -214,11 +217,15 @@ img {
   @media only screen and (max-width: 1024px) {
     .route {
       padding: 30px 25px;
-      flex-grow: 1; } }
-  .route:not([id="home"]) {
+      flex-grow: 1;
+      background-image: none; } }
+  @media only screen and (max-width: 768px) {
+    .route {
+      padding: 30px 20px; } }
+  .route:not([id='home']) {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/notary-photo.jpg"); }
     @media only screen and (max-width: 1024px) {
-      .route:not([id="home"]) {
+      .route:not([id='home']) {
         background-image: none; } }
   .route.current {
     z-index: 5;
@@ -240,10 +247,17 @@ img {
   -o-object-fit: contain;
      object-fit: contain;
   font-family: 'object-fit: contain;'; }
+  @media only screen and (max-width: 768px) {
+    .logo-image {
+      width: 34px;
+      height: 46px; } }
 
 .logo-small-text {
   font-size: 12px;
   color: #A9ABC1; }
+  @media only screen and (max-width: 768px) {
+    .logo-small-text {
+      font-size: 10px; } }
 
 .logo-large-text {
   font-family: "Spectral", serif;
@@ -254,6 +268,9 @@ img {
   @media only screen and (max-width: 1200px) {
     .logo-large-text {
       font-size: 22px; } }
+  @media only screen and (max-width: 768px) {
+    .logo-large-text {
+      font-size: 18px; } }
 
 .contacts {
   margin-top: auto;
@@ -264,6 +281,9 @@ img {
     .contacts {
       margin-top: 0;
       margin-left: auto; } }
+  @media only screen and (max-width: 576px) {
+    .contacts {
+      display: none; } }
 
 .contacts-phone,
 .contacts-email,
@@ -349,11 +369,19 @@ img {
 .navigation-list {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .navigation-list {
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .navigation-list-item {
   margin-right: 40px; }
+  @media only screen and (max-width: 768px) {
+    .navigation-list-item {
+      margin-bottom: 5px; } }
   .navigation-list-item:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 0; }
 
 .navigation-link {
   font-size: 14px;
@@ -374,6 +402,9 @@ img {
     margin-top: 5px;
     display: block;
     background-color: #D4D4D5; }
+    @media only screen and (max-width: 768px) {
+      .navigation-link::after {
+        margin-top: 0px; } }
   .navigation-link:link, .navigation-link:visited {
     color: #26262C; }
 
@@ -386,6 +417,10 @@ img {
   @media only screen and (max-width: 1024px) {
     .homepage {
       margin-top: 70px; } }
+  @media only screen and (max-width: 768px) {
+    .homepage {
+      width: 100%;
+      margin-top: 35px; } }
 
 .homepage-title {
   font-family: "Spectral", serif;
@@ -402,12 +437,18 @@ img {
     .homepage-title {
       margin-bottom: 40px;
       line-height: 1.4; } }
+  @media only screen and (max-width: 768px) {
+    .homepage-title {
+      font-size: 22px; } }
 
 .inner-page {
   margin-top: 70px; }
   @media only screen and (max-width: 1200px) {
     .inner-page {
       margin-top: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .inner-page {
+      margin-top: 30px; } }
 
 .inner-page-heading {
   color: #26262C;
@@ -419,6 +460,9 @@ img {
   @media only screen and (max-width: 1200px) {
     .inner-page-heading {
       font-size: 42px; } }
+  @media only screen and (max-width: 768px) {
+    .inner-page-heading {
+      font-size: 32px; } }
   .inner-page-heading::after {
     content: '';
     height: 4px;
@@ -439,6 +483,9 @@ img {
     line-height: 1.5;
     color: #45454F;
     margin-bottom: 15px; }
+    @media only screen and (max-width: 768px) {
+      .inner-page-content p {
+        font-size: 16px; } }
 
 .videos-list {
   display: flex;
@@ -448,10 +495,17 @@ img {
   @media only screen and (max-width: 1200px) {
     .videos-list {
       max-width: none; } }
+  @media only screen and (max-width: 768px) {
+    .videos-list {
+      flex-direction: column;
+      flex-wrap: nowrap; } }
 
 .videos-list-item {
   padding: 15px;
   width: 50%; }
+  @media only screen and (max-width: 768px) {
+    .videos-list-item {
+      width: 100%; } }
 
 .videos-card {
   display: block;

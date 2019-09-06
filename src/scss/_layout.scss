@@ -1,7 +1,3 @@
-
-
-
-
 .page-sidebar {
     width: 380px;
     flex-shrink: 0;
@@ -19,15 +15,17 @@
         padding: 20px 25px;
     }
 
-
     @include breakpoint(tablet) {
         width: 100%;
         background-image: none;
         flex-direction: row;
         align-items: center;
-      }
-}
+    }
 
+    @include breakpoint(mobile) {
+        padding: 12px 20px;
+    }
+}
 
 .page-main {
     width: 20%;
@@ -36,20 +34,13 @@
         width: 100%;
         flex-direction: column;
         display: flex;
-      }
-   
-    
-    
+    }
 }
-
 
 .page-sidebar,
 .page-main {
     height: 100%;
-    
 }
-
-
 
 .router-view {
     height: 100%;
@@ -63,13 +54,12 @@
     }
 }
 
-
 .route {
     position: absolute;
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .6s ease, visibility 0s linear .6s;
+    transition: opacity 0.6s ease, visibility 0s linear 0.6s;
     top: 0;
     left: 0;
     width: 100%;
@@ -87,20 +77,22 @@
     }
     @include breakpoint(laptop) {
         padding: 25px 40px;
-        background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
+        background-image: linear-gradient(to top, rgba(white, 0.7), rgba(white, 0.7)), url('../img/notary-photo.jpg');
     }
     @include breakpoint(tablet) {
         padding: 30px 25px;
         flex-grow: 1;
-    }
-    
-    
-    &:not([id="home"]) {
-        background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
-        @include breakpoint(tablet) {
-        //    background-position: center;
-        //    background-size: cover;
         background-image: none;
+    }
+    @include breakpoint(mobile) {
+        
+        padding: 30px 20px;
+    }
+
+    &:not([id='home']) {
+        background-image: linear-gradient(to top, rgba(white, 0.7), rgba(white, 0.7)), url('../img/notary-photo.jpg');
+        @include breakpoint(tablet) {
+            background-image: none;
         }
     }
 
@@ -114,5 +106,3 @@
         }
     }
 }
-
-
