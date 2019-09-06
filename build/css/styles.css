@@ -151,9 +151,9 @@ img {
   background-repeat: no-repeat;
   background-size: 400% auto;
   background-position: center top -42px; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1470px) {
     .page-sidebar {
-      width: 320px;
+      width: 300px;
       padding: 20px 25px; } }
   @media only screen and (max-width: 1024px) {
     .page-sidebar {
@@ -204,6 +204,9 @@ img {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: top right; }
+  @media only screen and (max-width: 1470px) {
+    .route {
+      padding: 45px 40px; } }
   @media only screen and (max-width: 1200px) {
     .route {
       padding: 25px 40px;
@@ -216,8 +219,7 @@ img {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/notary-photo.jpg"); }
     @media only screen and (max-width: 1024px) {
       .route:not([id="home"]) {
-        background-position: center;
-        background-size: cover; } }
+        background-image: none; } }
   .route.current {
     z-index: 5;
     opacity: 1;
@@ -377,7 +379,7 @@ img {
 
 .homepage {
   margin-top: 12vh;
-  width: 65%; }
+  width: 70%; }
   @media only screen and (max-width: 1200px) {
     .homepage {
       width: 85%; } }

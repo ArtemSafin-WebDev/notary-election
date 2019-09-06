@@ -14,8 +14,8 @@
     background-repeat: no-repeat;
     background-size: 400% auto;
     background-position: center top -42px;
-    @include breakpoint(laptop) {
-        width: 320px;
+    @include breakpoint(desktop) {
+        width: 300px;
         padding: 20px 25px;
     }
 
@@ -70,7 +70,6 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .6s ease, visibility 0s linear .6s;
-   
     top: 0;
     left: 0;
     width: 100%;
@@ -83,6 +82,9 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top right;
+    @include breakpoint(desktop) {
+        padding: 45px 40px;
+    }
     @include breakpoint(laptop) {
         padding: 25px 40px;
         background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
@@ -96,8 +98,9 @@
     &:not([id="home"]) {
         background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
         @include breakpoint(tablet) {
-           background-position: center;
-           background-size: cover;
+        //    background-position: center;
+        //    background-size: cover;
+        background-image: none;
         }
     }
 
