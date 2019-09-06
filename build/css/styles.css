@@ -264,7 +264,8 @@ img {
       margin-left: auto; } }
 
 .contacts-phone,
-.contacts-email {
+.contacts-email,
+.contacts-whatsapp {
   display: flex;
   align-items: center; }
 
@@ -280,6 +281,13 @@ img {
     color: #A9ABC1;
     font-size: 14px;
     margin-left: 5px; }
+
+.contacts-whatsapp {
+  font-size: 16px;
+  margin-top: 5px; }
+  .no-touch .contacts-whatsapp:hover,
+  .touch .contacts-whatsapp:active {
+    text-decoration: underline; }
 
 .contacts-email {
   font-weight: 700;

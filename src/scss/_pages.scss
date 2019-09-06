@@ -48,7 +48,8 @@
 
 
 .contacts-phone,
-.contacts-email {
+.contacts-email,
+.contacts-whatsapp {
     display: flex;
     align-items: center;
 }
@@ -68,6 +69,17 @@
         color: $light-blue-text;
         font-size: 14px;
         margin-left: 5px;
+    }
+}
+
+
+.contacts-whatsapp {
+    font-size: 16px;
+    margin-top: 5px;
+    
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
     }
 }
 
