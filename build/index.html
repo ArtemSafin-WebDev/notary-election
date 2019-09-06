@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <link rel="stylesheet" href="misc/fancybox.css" />
+        <link rel="stylesheet" href="css/styles.min.css" />
+        <title>
+            Index Page
+        </title>
+    </head>
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 21 15" id="mail" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.59 1.17L14 6.64l6.63 7.06a2.36 2.36 0 00.37-1.2v-10a2.38 2.38 0 00-.41-1.33zm-9.66 8.05a.66.66 0 01-.86 0L8 7.46l-6.76 7.16a2.67 2.67 0 001.38.38h15.76a2.67 2.67 0 001.38-.38L13 7.46z" />
+                    <path d="M19.63.32A2.67 2.67 0 0018.38 0H2.63a2.68 2.68 0 00-1.26.32l9.13 7.6zM.41 1.17A2.38 2.38 0 000 2.5v10a2.36 2.36 0 00.34 1.2L7 6.64z" />
+                </symbol>
+                <symbol viewBox="0 0 12 20" id="phone" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.41.59A2 2 0 0010 0H2A2 2 0 00.59.59 2 2 0 000 2v16a2 2 0 00.59 1.41A2 2 0 002 20h8a2 2 0 002-2V2a2 2 0 00-.59-1.41zM4.75 2h2.5a.22.22 0 01.25.25.22.22 0 01-.25.25h-2.5a.22.22 0 01-.25-.25.22.22 0 01.25-.25zm2.13 16.88a1.23 1.23 0 01-1.76 0A1.25 1.25 0 016 16.75a1.24 1.24 0 01.88 2.13zm3.47-3A.47.47 0 0110 16H2a.47.47 0 01-.35-.15.47.47 0 01-.15-.35v-11a.47.47 0 01.15-.35A.47.47 0 012 4h8a.51.51 0 01.5.5v11a.47.47 0 01-.15.35z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 13 15" id="play" xmlns="http://www.w3.org/2000/svg"><path d="M13 7.5L.25 14.86V.14z" /></symbol>
+            </svg>
+        </div>
+
+        <aside class="page-sidebar">
+            <div class="logo">
+                <img src="img/notary-logo.svg" width="54" height="72" alt="Логотип нотариата" class="logo-image" />
+                <div class="logo-text-block">
+                    <p class="logo-small-text">
+                        Нотариус города Москвы
+                    </p>
+                    <p class="logo-large-text">
+                        Репин Николай Викторович
+                    </p>
+                </div>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79262208926" class="contacts-phone"
+                    ><span class="contacts-icon-container">
+                        <svg width="12" height="20" aria-hidden="true" class="icon-phone">
+                            <use xlink:href="#phone" />
+                        </svg> </span
+                    ><span class="contacts-phone-text">
+                        +7 (926) 220-89-26
+                    </span>
+                    <span class="messenger">(Whats App)</span>
+                </a>
+                <a href="mailto:2609@mosnot.ru" class="contacts-email">
+                    <span class="contacts-icon-container">
+                        <svg width="20" height="15" aria-hidden="true" class="icon-mail">
+                            <use xlink:href="#mail" />
+                        </svg> </span
+                    ><span class="contacts-email-text">2609@mosnot.ru</span>
+                </a>
+            </div>
+            <p class="all-rights-reserved">
+                © 2019 Все права защищены
+            </p>
+        </aside>
+        <main class="page-main">
+            <div class="router-view js-router-view">
+                <div class="route current" id="home">
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-list-item"><a href="#about-candidate" class="navigation-link js-nav-link">О кандидате</a></li>
+                            <li class="navigation-list-item"><a href="#for-colleagues" class="navigation-link js-nav-link">Обращение к коллегам</a></li>
+                            <li class="navigation-list-item"><a href="#program-thesis" class="navigation-link js-nav-link">Тезисы программы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="homepage">
+                        <h1 class="homepage-title">
+                            Интервью кандидата в Президенты Московской городской нотариальной палаты Репина Николая Викторовича
+                        </h1>
+                        <ul class="videos-list">
+                            <li class="videos-list-item">
+                                <a href="https://www.youtube.com/watch?v=W94QRD0vOfg" class="videos-card" data-fancybox data-width="640" data-height="360">
+                                    <div class="videos-card-image-container">
+                                        <img src="img/video-preview-1.jpg" alt="Превью видео" class="videos-card-image" />
+                                        <span class="videos-card-play">
+                                            <svg width="16" height="16" aria-hidden="true" class="icon-play">
+                                                <use xlink:href="#play" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <p class="videos-card-title">
+                                        Название интервью №1
+                                    </p>
+                                    <p class="videos-card-duration">
+                                        Продолжительность 15 мин
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="videos-list-item">
+                                <a href="https://www.youtube.com/watch?v=W94QRD0vOfg" class="videos-card" data-fancybox data-width="640" data-height="360">
+                                    <div class="videos-card-image-container">
+                                        <img src="img/video-preview-2.jpg" alt="Превью видео" class="videos-card-image" />
+                                        <span class="videos-card-play">
+                                            <svg width="16" height="16" aria-hidden="true" class="icon-play">
+                                                <use xlink:href="#play" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <p class="videos-card-title">
+                                        Название интервью №2
+                                    </p>
+                                    <p class="videos-card-duration">
+                                        Продолжительность 1 час 05 мин
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="route" id="about-candidate">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="#home" class="navigation-link js-nav-link">Назад</a></li>
+                    </ul>
+                    <div class="inner-page">
+                        <h1 class="inner-page-heading">
+                            О кандидате
+                        </h1>
+                        <div class="inner-page-content">
+                            <p>Родился 20 июля 1970 года в Москве.</p>
+                            <p>
+                                В период с 1988 года по 1990 год служил в рядах Советской Армии.
+                            </p>
+                            <p>Имею два высших образования.</p>
+                            <p>
+                                Окончил Московский институт радиотехники, электроники и автоматики (Российский технологический университет) с присвоением квалификации радиоинженер. Во время обучения занимался разработкой программного обеспечения для
+                                исследования прохождения радиосигналов в верхних слоях атмосферы.
+                            </p>
+                            <p>Окончил Московскую государственную юридическую академию (Московский государственный юридический университет имени О.Е. Кутафина) с присвоением квалификации юрист.</p>
+                            <p>Имею степень кандидата юридических наук, в 2006 году защитил диссертацию на тему «Конституционно - правовой статус нотариальных палат в Российской Федерации».</p>
+                            <p>С момента становления внебюджетного нотариата России принимал активное участие в создании и деятельности Московской городской нотариальной палаты и Федеральной нотариальной палаты.</p>
+                            <p>В 2001 году назначен на должность нотариуса г.Москвы.</p>
+                            <p>В 2006 году являлся секретарем Комиссии по проверке профессиональной деятельности нотариусов МГНП.</p>
+                            <p>В 2008 году возглавлял Комиссию МГНП по информационному обеспечению нотариальной деятельности.</p>
+                            <p>С 2008 года по 2019 год являлся членом Комиссии по использованию информационных технологий Федеральной нотариальной палаты.</p>
+                            <p>С 2012 года по настоящее время являюсь членом Правления Московской городской нотариальной палаты.</p>
+                            <p>
+                                Совместно с нотариусом г.Москвы Брагиной М.Г. по поручению Президента МГНП создал модернизированную версию программы учета наследственных дел «Наследство без границ», которая была запущена в 2005 году в Москве и в 2012
+                                году в Санкт Петербурге.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="route" id="for-colleagues">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="#home" class="navigation-link js-nav-link">Назад</a></li>
+                    </ul>
+                    <div class="inner-page">
+                        <h1 class="inner-page-heading">
+                            Обращение к коллегам
+                        </h1>
+                        <div class="inner-page-content">
+                            <p>26 сентября 2019 года состоится внеочередное общее Собрание членов Московской городской нотариальной палаты, в повестку дня которого внесен вопрос о выборах ее Президента.</p>
+                            <p>
+                                Я принял решение участвовать в выборах, поскольку знаю, как должна работать наша с Вами Московская городская нотариальная палата. По моему мнению, ее основная цель - защищать и помогать нотариусу во всех текущих и
+                                сложных моментах как работы, так и жизни.
+                            </p>
+                            <p>Это должна быть дружественная для нас организация, главная задача которой – содействовать нотариусам в нашей непростой работе, помогать в решении правовых, организационных и технических вопросов.</p>
+                            <p>
+                                В условиях постоянно меняющегося законодательства на первое место встает вопрос правильности и законности совершения нотариальных действий, разрешить который можно организованной работой, направленной на повышение
+                                уровня знаний, разъяснение спорных и неоднозначных юридических моментов и оказанием конкретной правовой помощи нашим коллегам по защите их интересов в спорных ситуациях.
+                            </p>
+                            <p>Необходимо создание современного и оперативно функционирующего методического отдела, куда мы сможем обращаться для получения ответов на возникающие вопросы.</p>
+                            <p>Считаю, что помимо непосредственно нотариусов, необходимо проводить обучение помощников и сотрудников нотариусов.</p>
+                            <p>Проверки профессиональной деятельности нотариусов должны проходить по понятным правилам и иметь своей основной целью помощь и устранение ошибок в работе нотариуса.</p>
+                            <p>Необходимо развивать социальную защиту нотариусов, обращая особое внимание на защиту и помощь нотариусам.</p>
+                            <p>Я всегда считал и считаю, что все коллеги равны, важно во всех сложных жизненных ситуациях оставаться человеком.</p>
+                            <p>Я уверен, что Ваше решение проголосовать за меня позволит нам вместе создать палату, которая будет заботиться и помогать нам во всех вопросах.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="route" id="program-thesis">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="#home" class="navigation-link js-nav-link">Назад</a></li>
+                    </ul>
+                    <div class="inner-page">
+                        <h1 class="inner-page-heading">
+                            Тезисы предвыборной программы
+                        </h1>
+                        <div class="inner-page-content">
+                            <p>
+                                1. Организация взаимодействия нотариусов Москвы с органами власти Москвы.
+                            </p>
+                            <p>2. Перераспределение бюджета Московской городской нотариальной палаты для реализации ее уставных задач.</p>
+                            <p>3. Программа по вхождению в профессию вновь назначенных нотариусов.</p>
+                            <p>4. Социальная помощь нотариусам Москвы.</p>
+                            <p>5. Защита интересов нотариусов Москвы.</p>
+                            <p>6. Защита чести и достоинства нотариусов Москвы.</p>
+                            <p>7. Организация работы методического отдела Московской городской нотариальной палаты.</p>
+                            <p>8. Создание новых возможностей для работы нотариусов Москвы.</p>
+                            <p>9. Совершенствование обучения нотариусов Москвы и их сотрудников.</p>
+                            <p>10. Популяризация нотариальной формы документов.</p>
+                            <p>11. Установление стоимости услуг правового и технического характера пропорционально времени, затраченному на изготовление документов и не ниже, чем установлено в сопредельных регионах.</p>
+                            <p>12. Программа помощи нотариусам Москвы в сложных жизненных ситуациях.</p>
+                            <p>13. Расширение списка уважительных причин отсутствия нотариуса на рабочем месте.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="misc/jquery.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

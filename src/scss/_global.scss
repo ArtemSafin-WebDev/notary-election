@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  
+}
+
+body {
+  min-width: 320px;
+  line-height: 1.4;
+  font-size: 16px;
+  height: 100vh !important;
+  font-family: sans-serif;
+  display: flex;
+  font-family: $noto;
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    height: auto !important;
+    min-height: 100vh;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  width: 100%;
+  display: block;
+}
+
+textarea {
+  resize: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+}
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  @include visuallyHidden();
+}
+
+
+
+

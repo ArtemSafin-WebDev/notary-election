@@ -1,0 +1,115 @@
+
+
+
+
+.page-sidebar {
+    width: 380px;
+    flex-shrink: 0;
+    background-color: $blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+    background-image: url('../img/background-sich.svg');
+    background-repeat: no-repeat;
+    background-size: 400% auto;
+    background-position: center top -42px;
+    @include breakpoint(laptop) {
+        width: 320px;
+        padding: 20px 25px;
+    }
+
+
+    @include breakpoint(tablet) {
+        width: 100%;
+        background-image: none;
+        flex-direction: row;
+        align-items: center;
+      }
+}
+
+
+.page-main {
+    width: 20%;
+    flex-grow: 1;
+    @include breakpoint(tablet) {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+      }
+   
+    
+    
+}
+
+
+.page-sidebar,
+.page-main {
+    height: 100%;
+    
+}
+
+
+
+.router-view {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(tablet) {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+.route {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .6s ease, visibility 0s linear .6s;
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45px 65px;
+    background-color: #fff;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-image: url('../img/notary-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top right;
+    @include breakpoint(laptop) {
+        padding: 25px 40px;
+        background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
+    }
+    @include breakpoint(tablet) {
+        padding: 30px 25px;
+        flex-grow: 1;
+    }
+    
+    
+    &:not([id="home"]) {
+        background-image: linear-gradient(to top, rgba(white, .7), rgba(white, .7)), url('../img/notary-photo.jpg');
+        @include breakpoint(tablet) {
+           background-position: center;
+           background-size: cover;
+        }
+    }
+
+    &.current {
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.6s, visiblity 0.6s;
+        @include breakpoint(tablet) {
+            position: static;
+        }
+    }
+}
+
+
